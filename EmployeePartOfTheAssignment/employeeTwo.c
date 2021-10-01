@@ -38,7 +38,7 @@ static int compareEmployeeSalary(const void *targetPtr, PtrToConstEmployee table
 
 
 
-PtrToEmployee serchEmployeebyNumber(PtrToConstEmployee ptr, int size, long number)
+PtrToEmployee searchEmployeebyNumber(PtrToConstEmployee ptr, int size, long number)
 {
     return searchEmployeeTable(ptr, size, &number, compareEmployeeNumber);
 }
@@ -53,7 +53,7 @@ PtrToEmployee searchEmployeeByPhone(PtrToConstEmployee ptr, int size, char* phon
     return searchEmployeeTable(ptr, size, phone, compareEmployeePhone);
 }
 
-PtrToEmployee serchEmployeebyNumber(PtrToConstEmployee ptr, int size, double salary)
+PtrToEmployee searchEmployeebySalary(PtrToConstEmployee ptr, int size, double salary)
 {
-    return searchEmployeeTable(ptr, size, &salary, compareEmployeeNumber);
+    return searchEmployeeTable(ptr, size, &salary, compareEmployeeSalary);
 }

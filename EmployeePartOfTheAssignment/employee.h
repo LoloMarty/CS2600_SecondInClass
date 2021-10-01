@@ -10,3 +10,4 @@ typedef struct
 } Employee, *PtrToEmployee;
 
 typedef const Employee *PtrToConstEmployee; //defines a pointer value of type "Employee" which cannot be changed (because of the const prefix)
+

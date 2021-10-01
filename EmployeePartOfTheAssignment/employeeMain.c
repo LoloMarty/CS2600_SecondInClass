@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    PtrToEmployee searhEmployeeByNumber(const Employee table[], int sizeTable, long numberToFind);
+    PtrToEmployee searchEmployeeByNumber(const Employee table[], int sizeTable, long numberToFind);
     PtrToEmployee searchEmployeeByName(const Employee table[], int sizeTable, char * numberToFind);
 
     extern Employee EmployeeTable[];
@@ -13,7 +13,7 @@ int main(void)
     PtrToEmployee matchPtr;
     matchPtr = searchEmployeeByNumber(EmployeeTable, EmployeeTableEntries, 1045);
 
-    if (matchPtr)
+    if (matchPtr != NULL)
     {
         printf("Employee ID 1045 is in record %d\n", matchPtr - EmployeeTable);
     }else{
