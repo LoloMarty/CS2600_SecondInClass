@@ -6,7 +6,9 @@ int main(void)
 {
     PtrToEmployee searchEmployeeByNumber(const Employee table[], int sizeTable, long numberToFind);
     PtrToEmployee searchEmployeeByName(const Employee table[], int sizeTable, char * numberToFind);
-
+    PtrToEmployee searchEmployeeByPhoneNumber (PtrToConstEmployee ptr, int tableSize, char * targetPhoneNumber);
+    PtrToEmployee searchEmployeeBySalary (PtrToConstEmployee ptr, int tableSize, double targetSalary);
+    
     extern Employee EmployeeTable[];
     extern const int EmployeeTableEntries;
 

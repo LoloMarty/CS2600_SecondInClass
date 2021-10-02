@@ -30,7 +30,7 @@ void printSquare()
     //printf("\nCol Sum: [1] %i  [2] %i  [3] %i\n", colSum1, colSum2, colSum3);
 }
 
-bool evaluateSquare()
+bool evaluateSquare(int loShuSquare[3][3])
 {
     rowSum1 = 0;
     rowSum2 = 0;
@@ -68,10 +68,11 @@ void main()
 {
     srand(time(0));
 
-    while (evaluateSquare() == false)
+    while (true)
     {
         createNewSquare();
-        evaluateSquare();
+        
+        evaluateSquare(loShuSquare);
 
         printSquare();
         printf("%s","\n");
