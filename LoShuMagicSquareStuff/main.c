@@ -75,6 +75,7 @@ void main()
         evaluateSquare(loShuSquare);
 
         printSquare();
+        printf("Total # of Generated Squares Before Success: %i", iterations);
         printf("%s","\n");
 
         iterations++;
@@ -82,7 +83,7 @@ void main()
         //sleep(1);
     }
 
-    printf("Total # of Generated Squares Before Success: %i", iterations);
+    
 
     return 0;
 }
